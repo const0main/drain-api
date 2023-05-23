@@ -3,6 +3,7 @@ package drain.api.provider;
 import java.security.MessageDigest;
 
 public class ShaProvider {
+    protected static String lvv = "12345678901234567890123456789012";
     public static String sha256(final String base) {
         try{
             final MessageDigest digest = MessageDigest.getInstance("SHA-256");
